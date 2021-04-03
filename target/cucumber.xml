@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.203">
+    <testcase classname="Belly" name="a few cukes" time="0.062">
+        <system-out><![CDATA[Given I have 42 cukes in my belly...........................................passed
+When I wait 1 hour..........................................................passed
+Then my belly should growl..................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

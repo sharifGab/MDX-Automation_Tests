@@ -1,0 +1,56 @@
+[
+  {
+    "source": "I have {int} cukes in my belly",
+    "steps": [
+      {
+        "name": "I have 42 cukes in my belly",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/sharif.gaballah/IdeaProjects/MDX-Automation_Tests/src/test/resources/project/belly.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I wait {int} hour",
+    "steps": [
+      {
+        "name": "I wait 1 hour",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/sharif.gaballah/IdeaProjects/MDX-Automation_Tests/src/test/resources/project/belly.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "my belly should growl",
+    "steps": [
+      {
+        "name": "my belly should growl",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/sharif.gaballah/IdeaProjects/MDX-Automation_Tests/src/test/resources/project/belly.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]
