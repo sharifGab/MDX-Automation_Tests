@@ -1,0 +1,6 @@
+
+@sgab-allah @test
+Scenario: a few cukes               [90m# src/test/java/features/Regression/belly.feature:5[0m
+  [32mGiven [0m[32mI have [0m[32m[1m42[0m[32m cukes in my belly[0m [90m# step_definations.StepDefinitions.iHaveCukesInMyBelly(int)[0m
+  [32mWhen [0m[32mI wait [0m[32m[1m1[0m[32m hour[0m                [90m# step_definations.StepDefinitions.iWaitHour(int)[0m
+  [32mThen [0m[32mmy belly should growl[0m        [90m# step_definations.StepDefinitions.myBellyShouldGrowl()[0m
