@@ -11,12 +11,9 @@
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
-        <maven.compile.encoding>UTF-8</maven.compile.encoding>
         <selenium.version>3.141.59</selenium.version>
-        <junit.version>4.13.1</junit.version>
+        <junit.version>4.13.2</junit.version>
     </properties>
 
     <dependencies>
@@ -92,6 +89,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -108,6 +111,26 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+        <!-- log4j -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.12</artifactId>
+            <version>1.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -121,22 +144,26 @@
             </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>3.8.0</version>
+                <artifactId>cucumber-reporting</artifactId>
+                <version>4.5.1</version>
                 <executions>
                     <execution>
-                        <id>execution</id>
+                        <id>execute</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>MDX-Automation_Tests</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-JVM-reports</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-                            <!--<enableFlashChart></enableFlashChart> -->
-                            <buildNumber>1</buildNumber>
-                            <parallelTesting>false</parallelTesting>
+                            <projectName>${project.name}</projectName>
+                            <!--skip>false</skip-->
+                            <outputDirectory>${project.build.directory}/reports</outputDirectory>
+                            <inputDirectory>${project.build.directory}/reports.json</inputDirectory>
+                            <jsonFiles>
+                                <param>**/*.json</param>
+                            </jsonFiles>
+                            <mergeFeaturesById>false</mergeFeaturesById>
+                            <checkBuildResult>false</checkBuildResult>
+                            <buildNumber>3</buildNumber>
                         </configuration>
                     </execution>
                 </executions>
