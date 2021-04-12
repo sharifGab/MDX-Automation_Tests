@@ -1,6 +1,5 @@
 ![HQR](src/test/resources/setup/hospital_icons.png)
 ![FEi](src/test/resources/setup/feisystems.png)
-![bellese](src/test/resources/setup/bellese1.jpg?raw=true)
 ![cms.gov](src/test/resources/setup/QualityNet-logo.svg)
 ![Language](https://img.shields.io/badge/language-JavaScript%20ES9-orange.svg)
 [![Maven Central](https://img.shields.io/maven-central/v/org.webjars.bowergithub.binhbbbb/shields-badge.svg?style=plastic?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.webjars.bowergithub.binhbbbb%22%20AND%20a:%22shields-badge%22)
@@ -10,7 +9,7 @@
 ![Java CI with Maven](https://github.com/sharifGab/MDX-Automation_Tests/actions/workflows/maven.yml/badge.svg?style=plastic)
 ![AppVeyor branch](https://img.shields.io/appveyor/build/sharifGab/MDX-Automation_Tests/master?style=plastic/badge.svg)
 [![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)](https://github.com/ikatyang/emoji-cheat-sheet/actions?query=workflow%3A%22Up+to+Date%22)
-#[HQR-Test-Automation](https://qnetgit.cms.gov/Bellese/HQR-Test-Automation)
+# [HQR-Test-Automation](https://qnetgit.cms.gov/Bellese/HQR-Test-Automation)
 [Guidelines for this project](src/resources/docs/CONTRIBUTING.pdf)
 # GitHub PR Validation :triangular_flag_on_post:
 - ![(star)](https://wiki.jenkins.io/s/en_GB/8100/5084f018d64a97dc638ca9a178856f851ea353ff/_/images/icons/emoticons/star_yellow.svg)
@@ -103,4 +102,4 @@
 >>   redshift.test.password=
 >
 # Jenkins :triangular_flag_on_post:
-![[coverage-report](https://testrail.hcqis.org/reports/HQR/custom_reports/hst_test_orchestration_coverage-report-10396/index.html)](FitNesseRoot/files/images/Coverage.JPG)
+![[coverage-report](https://testrail.hcqis.org/reports/HQR/custom_reports/hst_test_orchestration_coverage-report-10396/index.html)](src/test/resources/setup/Coverage.JPG)
