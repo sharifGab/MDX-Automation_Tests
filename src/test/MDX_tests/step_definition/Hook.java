@@ -1,7 +1,7 @@
 package step_definition;
 
 import Base.BaseUtil;
-import io.cucumber.java.Scenario;
+import io.cucumber.core.backend.TestCaseState;
 import org.junit.After;
 import org.junit.Before;
 
@@ -27,10 +27,11 @@ public class Hook extends BaseUtil {
     }
 
     @After
-    public void TearDownTest(Scenario scenario) throws InterruptedException, AWTException, IOException {
+    public void TearDownTest() throws InterruptedException, AWTException, IOException {
+        TestCaseState scenario = null;
         if (scenario.isFailed()) {
 
-            System.out.println("Scenario Failed @ " + scenario.getName());
+            System.out.println("Scenario Failed @ ");
             Thread.sleep(120);
             Robot r = new Robot();
             String path = "C:\\Whitelisted\\GitHub\\FEi\\MDX-Automation_Tests\\src\\main";

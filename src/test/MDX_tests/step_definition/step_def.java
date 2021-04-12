@@ -15,7 +15,7 @@ public class step_def extends BaseUtil {
 
     @Given("test to do a web lunch")
     public void test_to_do_a_web_lunch() {
-        // Write code here that turns the phrase above into concrete actions
+        System.out.println("hello");
         baseUtil.print("Given");
     }
 

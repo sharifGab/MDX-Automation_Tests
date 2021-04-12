@@ -6,14 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/MDX_tests/features/gherkin.feature"},
-        glue = {"step_definition"},
-        tags = "@sgab-allah",
-        plugin = {"pretty", "html:target/cucumber-html-report", "json:target/Reports", "junit:target/cucumber.xml", "rerun:target/rerun.txt", "pretty:target/cucumber-pretty.xml", "usage:target/cucumber-usage.json"}
+        features = {"src/test/resources/features/gherkin.feature"},
+        glue = {"step_definition.step_def.java"},
+        //tags = "@sgab-allah",
+        plugin = {"pretty","html:target/cucumber1", "json:target/cucumber/cucumber.json"} // "summary",
+        //monochrome= false,
+        //dryRun= false
 )
 
 public class RunCucumberTest {
-    public RunCucumberTest() {
 
-    }
 }
